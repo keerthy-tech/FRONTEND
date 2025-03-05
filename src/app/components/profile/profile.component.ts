@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
   user: any = null; // Holds the user data
-  apiUrl = 'https://cyber2-be.onrender.com/api/todos/getuser'; // API endpoint to fetch user details
-  delUrl= 'https://cyber2-be.onrender.com/api/todos/deleteuser'
+  apiUrl = 'https://backend-f5vn.onrender.com/api/todos/getuser'; // API endpoint to fetch user details
+  delUrl= 'https://backend-f5vn.onrender.com/api/todos/deleteuser'
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {

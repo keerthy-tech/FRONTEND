@@ -28,7 +28,7 @@ export class ResetPassComponent {
     this.isLoading = true;
     const formData = this.resetPasswordForm.value;
 
-    this.http.patch('https://cyber2-be.onrender.com/api/todos/resetpassword', formData).subscribe({
+    this.http.patch('https://backend-f5vn.onrender.com/api/todos/resetpassword', formData).subscribe({
       next: (response: any) => {
         alert(response.message || 'Password reset successful!');
       },
